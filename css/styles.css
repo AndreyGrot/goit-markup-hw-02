@@ -1,0 +1,169 @@
+:root {
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --logo-color: #2196f3;
+  --header-background-color: #ffffff;
+  --benefits-background-color: #e5e5e5;
+  --team-background-color: #f5f4fa;
+  --footer-background-color: #2f303a;
+  --accent-color: #2196f3;
+  --footer-nav-color: rgba(255, 255, 255, 0.6);
+  --button-color:#ffffff;
+  --button-background-color:#2196F3;
+  /*страница портфолио*/
+  --button--back-portfolio-first:#F5F4FA;
+  --button-col-portfolio-first:#212121;
+  --button--back-portfolio-second:#2196F3;
+  --button--col-portfolio-second:#ffffff;
+}
+/*сбросить точки в списках*/
+.list {
+  list-style: none;
+}
+
+body {
+    font-family: robo;
+  color: var(--primary-text-color);
+}
+
+
+
+/*ХЕДЕР*/
+
+
+.page-header{
+    background-color: var(--header-background-color);
+}
+
+.logo {
+    fond-size:26px;
+    line-height: 145*31;
+    font-weight:bold;
+  color: var(--logo-color);
+}
+
+.site-nav .link{
+    color: var(--primary-text-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus{
+    color: var( --accent-color);
+}
+
+.contact .link{
+    color: var(--secondary-text-color);
+}
+
+.contact .link:hover,
+.contact .link:focus{
+    color: var(--accent-color);
+}
+
+
+/*Герой*/
+
+.hero{
+    background-color: #2F303A;
+}
+
+.hero .title{
+    color:#FFFFFF;
+}
+
+.button{
+    
+}
+
+.button-main{
+    color: var(--button-color);
+    background-color: var(--button-background-color);
+}
+
+
+/*чем мы занимаемся 1*/
+
+
+.section{}
+
+.benefits{
+    background-color: var(--benefits-background-color);
+}
+
+.benefits-list{}
+
+.text{
+    color: var(--secondary-text-color);
+}
+
+
+/*чем мы занимаемся 2*/
+
+
+.specialization{
+    background-color: var(--benefits-background-color);
+}
+
+.specialization-list{}
+
+
+/*наша команда*/
+
+
+.team{
+    background-color: var(--team-background-color);
+}
+
+.team .team-list p{
+color: var(--secondary-text-color);
+}
+
+
+/*ФУТЕР*/
+
+
+.footer{
+    background-color: var(--footer-background-color);
+}
+
+.footer-adress{}
+
+.footer-adress .map{
+    color: #FFFFFF;
+}
+
+.footer-adress .nav{
+    color:var(--footer-nav-color);
+}
+
+
+
+
+
+/*СТРАНИЦА-ПОРТФОЛИО*/
+
+
+
+
+
+.portfolio{}
+
+.portfolio-nav{}
+
+.button-portfolio{
+    color: var(--button-col-portfolio-first);
+    background-color: var(--button--back-portfolio-first);
+}
+
+.button-portfolio:hover,
+.button-portfolio:focus{
+    color: var(--button--col-portfolio-second);
+    background-color: var(--button--back-portfolio-second);
+}
+
+.content-list{}
+
+.content-list p{
+    color: var(--secondary-text-color);
+}
+
