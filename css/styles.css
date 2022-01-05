@@ -11,10 +11,10 @@
   --button-color:#ffffff;
   --button-background-color:#2196F3;
   /*страница портфолио*/
-  --button--back-portfolio-first:#F5F4FA;
+  --button-back-portfolio-first:#F5F4FA;
   --button-col-portfolio-first:#212121;
-  --button--back-portfolio-second:#2196F3;
-  --button--col-portfolio-second:#ffffff;
+  --button-back-portfolio-second:#2196F3;
+  --button-col-portfolio-second:#ffffff;
 }
 /*сбросить точки в списках*/
 .list {
@@ -22,8 +22,12 @@
 }
 
 body {
-    font-family: robo;
-  color: var(--primary-text-color);
+    font-family: roboto, sans-serif;
+    letter-spacing: 0.03em;
+    
+    color: var(--primary-text-color);
+    background-color: var(--benefits-background-color);
+    
 }
 
 
@@ -36,28 +40,52 @@ body {
 }
 
 .logo {
-    fond-size:26px;
-    line-height: 145*31;
-    font-weight:bold;
-  color: var(--logo-color);
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1,19;
+
+    color: var(--logo-color);
+    text-decoration: none;
 }
 
+.black{
+    color: #212121;
+}
+
+.white{
+    color: #ffffff;
+}
 .site-nav .link{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1,14;
+    letter-spacing: 0.02em;
+
     color: var(--primary-text-color);
+    text-decoration: none;
 }
 
 .site-nav .link:hover,
 .site-nav .link:focus{
     color: var( --accent-color);
+    text-decoration: none;
 }
 
 .contact .link{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1,14;
+    letter-spacing: 0.02em;
+
     color: var(--secondary-text-color);
+    text-decoration: none;
 }
 
 .contact .link:hover,
 .contact .link:focus{
     color: var(--accent-color);
+    text-decoration: none;
 }
 
 
@@ -68,14 +96,32 @@ body {
 }
 
 .hero .title{
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1,36;
+
+
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
     color:#FFFFFF;
 }
 
 .button{
-    
+    cursor: pointer;
 }
 
 .button-main{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1,88;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+
     color: var(--button-color);
     background-color: var(--button-background-color);
 }
@@ -90,9 +136,22 @@ body {
     background-color: var(--benefits-background-color);
 }
 
+.move-title{
+
+}
+
 .benefits-list{}
 
-.text{
+.benefits-list .title{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1,14;
+    text-transform: uppercase;
+}
+
+.benefits-list .text{
+    font-size: 14px;
+    line-height: 1,71;
     color: var(--secondary-text-color);
 }
 
@@ -102,6 +161,13 @@ body {
 
 .specialization{
     background-color: var(--benefits-background-color);
+}
+
+h2{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1,16;
+    text-align: center;
 }
 
 .specialization-list{}
@@ -114,8 +180,25 @@ body {
     background-color: var(--team-background-color);
 }
 
+.team-list{
+    text-align: center;  
+}
+
+.team .team-list h3{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1,27;
+
+    text-align: center;
+}
+
 .team .team-list p{
-color: var(--secondary-text-color);
+    font-size: 16px;
+    line-height: 1,19;
+
+    text-align: center;
+
+    color: var(--secondary-text-color);
 }
 
 
@@ -126,14 +209,28 @@ color: var(--secondary-text-color);
     background-color: var(--footer-background-color);
 }
 
-.footer-adress{}
+.footer-adress{
+    font-size: 14px;
+    line-height: 1,71;
+    font-style: normal;
+}
 
 .footer-adress .map{
     color: #FFFFFF;
+    text-decoration: none;
 }
 
 .footer-adress .nav{
     color:var(--footer-nav-color);
+    text-decoration: none;
+}
+
+.list .map:hover,
+.list .nav:hover,
+.list .map:focus
+.list .nav:focus{
+    color: var(--accent-color);
+    text-decoration: none;
 }
 
 
@@ -151,19 +248,41 @@ color: var(--secondary-text-color);
 .portfolio-nav{}
 
 .button-portfolio{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1,63;
+
+    text-align: center;
+
     color: var(--button-col-portfolio-first);
-    background-color: var(--button--back-portfolio-first);
+    background-color: var(--button-back-portfolio-first);
 }
 
 .button-portfolio:hover,
 .button-portfolio:focus{
-    color: var(--button--col-portfolio-second);
-    background-color: var(--button--back-portfolio-second);
+    color: var(--button-col-portfolio-second);
+    background-color: var(--button-back-portfolio-second);
 }
 
 .content-list{}
 
+.content-list .link{
+    text-decoration: none;
+    color: var(--primary-text-color);
+}
+
+.content-list h3{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+
+    letter-spacing: 0.06em;
+}
+
 .content-list p{
-    color: var(--secondary-text-color);
+    font-size: 16px;
+    line-height: 1,88;
+
+    color: var(--secondary-text-color)
 }
 
