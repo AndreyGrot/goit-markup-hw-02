@@ -22,7 +22,7 @@
 }
 
 body {
-    font-family: roboto, sans-serif;
+    font-family: roboto, raleway sans-serif;
     letter-spacing: 0.03em;
     
     color: var(--primary-text-color);
