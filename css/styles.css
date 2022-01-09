@@ -18,7 +18,9 @@
 }
 /*сбросить точки в списках*/
 .list {
-  list-style: none;
+    padding: 0;
+    margin: 0;
+    list-style: none;
 }
 
 body {
@@ -92,16 +94,18 @@ body {
 /*Герой*/
 
 .hero{
+    text-align: center;
     background-color: #2F303A;
 }
 
 .hero .title{
+    margin-top: 0;
+    margin-bottom: 30;
+
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
 
-
-    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
 
@@ -109,18 +113,26 @@ body {
 }
 
 .button{
+    display: inline-block;
+    min-width: 73px;
+    border: 0px solid transparent;
+
     font-family: roboto, sans-serif;
     cursor: pointer;
+    border-radius: 4px;
+
+    text-align: center;
 }
 
 .button-main{
+    padding: 10px 32px;
+
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
 
     display: flex;
     align-items: center;
-    text-align: center;
     letter-spacing: 0.06em;
 
     color: var(--button-color);
@@ -138,12 +150,15 @@ body {
 }
 
 .move-title{
-
+display: none;
 }
 
 .benefits-list{}
 
 .benefits-list .title{
+    margin-top: 0;
+    margin-bottom: 10px;
+
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -151,6 +166,9 @@ body {
 }
 
 .benefits-list .text{
+    margin-top: 0;
+    margin-bottom: 0;
+
     font-size: 14px;
     line-height: 1.71;
     color: var(--secondary-text-color);
@@ -249,11 +267,11 @@ h2{
 .portfolio-nav{}
 
 .button-portfolio{
+    padding: 6px 22px;
+
     font-weight: 500;
     font-size: 16px;
     line-height: 1.63;
-
-    text-align: center;
 
     color: var(--button-col-portfolio-first);
     background-color: var(--button-back-portfolio-first);
